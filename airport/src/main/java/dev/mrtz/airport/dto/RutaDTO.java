@@ -1,0 +1,5 @@
+package dev.mrtz.airport.dto;
+
+public class RutaDTO {
+
+}
