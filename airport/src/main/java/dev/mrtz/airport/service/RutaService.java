@@ -54,11 +54,29 @@ public class RutaService implements IRutaService {
     if (ruta == null)
       throw new NotFoundException("Ruta no encontrada");
 
+    Aeropuerto origen = aeropuertoRepo.findById(dto.getIdAeropuertoOrigen()).orElse(null);
+    Aeropuerto destino = aeropuertoRepo.findById(dto.getIdAeropuertoDestino()).orElse(null);
+
+    if (origen == null || destino == null)
+      throw new NotFoundException("Aeropuerto no encontrado");
+
+    if (origen.getId() == destino.getId())
+      throw new SameAirportException("El Aerpuerto Origen no puede ser el mismo que el destino");
+
+    ruta.setOrigen(origen);
+    ruta.setDestino(destino);
+
+    rutaRepo.save(ruta);
+    RutaDTO output = Mapper.toDTO(ruta);
+    return output;
   }
 
   @Override
   public void deleteRuta(Long id) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'deleteRuta'");
+    Ruta ruta = rutaRepo.findById(id).orElse(null);
+    if (ruta == null)
+      throw new NotFoundException("Ruta no encontrada");
+
+    rutaRepo.delete(ruta);
   }
 }
