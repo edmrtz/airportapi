@@ -19,13 +19,13 @@ import lombok.Setter;
 @Builder
 @Entity
 public class Cliente {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private String nombre;
-    private String apellido;
-    private int dni;
-    private Date fechaNacimiento;
-    private String telefono;
-    private String email;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+  private String nombre;
+  private String apellido;
+  private Integer dni;
+  private Date fechaNacimiento;
+  private String telefono;
+  private String email;
 }

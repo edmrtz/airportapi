@@ -27,6 +27,9 @@ public class RutaService implements IRutaService {
 
   @Override
   public RutaDTO createRuta(RutaDTO dto) {
+    if (dto == null)
+      return null;
+
     Long origenId = dto.getIdAeropuertoOrigen();
     Long destinoId = dto.getIdAeropuertoDestino();
 

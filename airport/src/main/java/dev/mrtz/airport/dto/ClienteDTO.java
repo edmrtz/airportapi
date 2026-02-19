@@ -14,11 +14,11 @@ import lombok.Setter;
 @NoArgsConstructor
 @Builder
 public class ClienteDTO {
-    private long id;
-    private String nombre;
-    private String apellido;
-    private int dni;
-    private Date fechaNacimiento;
-    private String telefono;
-    private String email;
+  private Long id;
+  private String nombre;
+  private String apellido;
+  private Integer dni;
+  private Date fechaNacimiento;
+  private String telefono;
+  private String email;
 }
