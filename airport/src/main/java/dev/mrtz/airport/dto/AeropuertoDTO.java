@@ -12,8 +12,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Builder
 public class AeropuertoDTO {
-    private long id;
-    private String nombre;
-    private String localidad;
-    private String provincia;
+  private Long id;
+  private String nombre;
+  private String localidad;
+  private String provincia;
 }

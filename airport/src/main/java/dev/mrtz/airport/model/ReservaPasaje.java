@@ -21,18 +21,18 @@ import lombok.Setter;
 @Builder
 @Entity
 public class ReservaPasaje {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @OneToOne
-    private Vuelo vuelo;
+  @OneToOne
+  private Vuelo vuelo;
 
-    @OneToOne
-    private Cliente cliente;
+  @OneToOne
+  private Cliente cliente;
 
-    private Date fechaReserva;
-    private int nroAsiento;
-    private Date fechaCheckIn;
-    private Estado estado;
+  private Date fechaReserva;
+  private Integer nroAsiento;
+  private Date fechaCheckIn;
+  private Estado estado;
 }

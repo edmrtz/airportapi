@@ -15,9 +15,9 @@ import lombok.Setter;
 @Builder
 public class VueloDTO {
 
-  private long id;
-  private long idRuta;
+  private Long id;
+  private Long idRuta;
   private Date fechaSalida;
-  private int asientosTotales;
-  private int asientosDisponibles;
+  private Integer asientosTotales;
+  private Integer asientosDisponibles;
 }

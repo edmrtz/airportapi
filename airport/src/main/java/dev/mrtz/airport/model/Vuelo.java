@@ -20,13 +20,13 @@ import lombok.Setter;
 @Builder
 @Entity
 public class Vuelo {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @OneToOne
-    private Ruta ruta;
-    private Date fechaSalida;
-    private int asientosTotales;
-    private int asientosDisponibles;
+  @OneToOne
+  private Ruta ruta;
+  private Date fechaSalida;
+  private Integer asientosTotales;
+  private Integer asientosDisponibles;
 }

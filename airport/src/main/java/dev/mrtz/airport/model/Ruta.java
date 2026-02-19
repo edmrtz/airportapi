@@ -19,15 +19,15 @@ import lombok.Setter;
 @Builder
 @Entity
 public class Ruta {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "id_aeropuerto_origen")
-    private Aeropuerto origen;
+  @OneToOne
+  @JoinColumn(name = "id_aeropuerto_origen")
+  private Aeropuerto origen;
 
-    @OneToOne
-    @JoinColumn(name = "id_aeropuerto_destino")
-    private Aeropuerto destino;
+  @OneToOne
+  @JoinColumn(name = "id_aeropuerto_destino")
+  private Aeropuerto destino;
 }

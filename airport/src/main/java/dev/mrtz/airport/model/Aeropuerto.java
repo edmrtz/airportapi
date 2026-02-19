@@ -17,10 +17,10 @@ import lombok.Setter;
 @Builder
 @Entity
 public class Aeropuerto {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private String nombre;
-    private String localidad;
-    private String provincia;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+  private String nombre;
+  private String localidad;
+  private String provincia;
 }

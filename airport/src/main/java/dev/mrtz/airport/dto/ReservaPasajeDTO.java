@@ -15,11 +15,11 @@ import lombok.Setter;
 @NoArgsConstructor
 @Builder
 public class ReservaPasajeDTO {
-  private long id;
-  private long idVuelo;
-  private long idCliente;
+  private Long id;
+  private Long idVuelo;
+  private Long idCliente;
   private Date fechaReserva;
-  private int nroAsiento;
+  private Integer nroAsiento;
   private Date fechaCheckIn;
   private Estado estado;
 }
