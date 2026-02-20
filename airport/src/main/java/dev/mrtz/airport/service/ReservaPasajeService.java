@@ -3,6 +3,7 @@ package dev.mrtz.airport.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import dev.mrtz.airport.dto.ReservaPasajeDTO;
 import dev.mrtz.airport.exception.NotFoundException;
@@ -14,6 +15,7 @@ import dev.mrtz.airport.repository.ClienteRepository;
 import dev.mrtz.airport.repository.ReservaPasajeRepository;
 import dev.mrtz.airport.repository.VueloRepository;
 
+@Service
 public class ReservaPasajeService implements IReservaPasajeService {
   @Autowired
   private ReservaPasajeRepository reservaRepo;

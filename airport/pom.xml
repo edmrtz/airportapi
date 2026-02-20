@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>dev.mrtz</groupId>
 	<artifactId>airport</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>airport api with postgresql + docker</name>
-	<description>Airport</description>
+	<version>0.0.1</version>
+	<name>airportapi</name>
+	<description>Airport API with PostgreSQL and Docker</description>
 	<url/>
 	<licenses>
 		<license/>

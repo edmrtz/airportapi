@@ -20,6 +20,7 @@ public class Mapper {
     Ruta ruta = v.getRuta();
 
     return VueloDTO.builder()
+        .id(v.getId())
         .idRuta(ruta.getId())
         .fechaSalida(v.getFechaSalida())
         .asientosTotales(v.getAsientosTotales())
@@ -31,6 +32,7 @@ public class Mapper {
       return null;
 
     return ClienteDTO.builder()
+        .id(c.getId())
         .nombre(c.getNombre())
         .apellido(c.getApellido())
         .dni(c.getDni())
@@ -47,6 +49,7 @@ public class Mapper {
     Cliente cliente = rp.getCliente();
 
     return ReservaPasajeDTO.builder()
+        .id(rp.getId())
         .idVuelo(vuelo.getId())
         .idCliente(cliente.getId())
         .fechaReserva(rp.getFechaReserva())
@@ -63,6 +66,7 @@ public class Mapper {
     Aeropuerto destino = r.getDestino();
 
     return RutaDTO.builder()
+        .id(r.getId())
         .idAeropuertoOrigen(origen.getId())
         .idAeropuertoDestino(destino.getId()).build();
 
@@ -73,6 +77,7 @@ public class Mapper {
       return null;
 
     return AeropuertoDTO.builder()
+        .id(a.getId())
         .nombre(a.getNombre())
         .localidad(a.getLocalidad())
         .provincia(a.getProvincia()).build();

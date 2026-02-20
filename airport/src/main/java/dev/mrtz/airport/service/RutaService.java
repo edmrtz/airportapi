@@ -3,6 +3,7 @@ package dev.mrtz.airport.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import dev.mrtz.airport.dto.RutaDTO;
 import dev.mrtz.airport.exception.NotFoundException;
@@ -13,6 +14,7 @@ import dev.mrtz.airport.model.Ruta;
 import dev.mrtz.airport.repository.AeropuertoRepository;
 import dev.mrtz.airport.repository.RutaRepository;
 
+@Service
 public class RutaService implements IRutaService {
 
   @Autowired

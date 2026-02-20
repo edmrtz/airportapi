@@ -2,12 +2,15 @@ package dev.mrtz.airport.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import dev.mrtz.airport.dto.ClienteDTO;
 import dev.mrtz.airport.exception.NotFoundException;
 import dev.mrtz.airport.mapper.Mapper;
 import dev.mrtz.airport.model.Cliente;
 import dev.mrtz.airport.repository.ClienteRepository;
 
+@Service
 public class ClienteService implements IClienteService {
   private ClienteRepository repo;
 

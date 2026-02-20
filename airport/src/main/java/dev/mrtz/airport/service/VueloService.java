@@ -2,6 +2,8 @@ package dev.mrtz.airport.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import dev.mrtz.airport.dto.VueloDTO;
 import dev.mrtz.airport.exception.NotFoundException;
 import dev.mrtz.airport.mapper.Mapper;
@@ -10,6 +12,7 @@ import dev.mrtz.airport.model.Vuelo;
 import dev.mrtz.airport.repository.RutaRepository;
 import dev.mrtz.airport.repository.VueloRepository;
 
+@Service
 public class VueloService implements IVueloService {
   private VueloRepository vueloRepo;
   private RutaRepository rutaRepo;
